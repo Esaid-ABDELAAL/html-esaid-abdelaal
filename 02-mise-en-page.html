@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mise en page</title>
+</head>
+
+
+<body>
+    <!--Facultatif mais apprécié en sémantique HTML et pour le SEO -->
+    <header></header>
+    <!-- Type block : prend tout la largeuur de ligne (<p>, h*>, <div>, <table>, <forme>, etc..) -->
+    <!-- Type inline : ne prend que la largeur nécessaire (<spawn>, <a>, <button>, etc...) -->
+
+    <!--En tête de h1 à h6  -->
+    <!-- Attention : pour respecter les règles SEO on n'utilise qu'un seule fois par page la balise h1 -->
+    <main>
+
+    <h1>Je suis moi</h1>
+
+    <p>Je suis un paragraphe : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores rerum, repudiandae quos
+        a id, asperiores tempore voluptas, maiores pariatur deserunt mollitia dolore error. Modi beatae, voluptates
+        veritatis pariatur adipisci iusto!</p>
+
+    <!-- Balise div servant par exemple à regrouper d'autre élement d'une meme page  -->
+    <div>
+        <h2>Je suis le h2 de la div</h2>
+        <p>Je suis le paragraphe 1 : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur error veniam
+            facere odit natus, possimus laudantium, rerum neque cumque debitis esse qui consequatur nesciunt eum
+            architecto ut voluptatibus officiis libero.</p>
+        <p>Je suis le paragraphe 2 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quam ipsa
+            blanditiis nostrum possimus nam maiores. Tempore voluptates ut officia animi porro ipsa tenetur perferendis,
+            fugit repudiandae non sunt fuga.</p>
+        <p>Je suis le paragraphe 3 : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempora culpa
+            eius tenetur aliquid suscipit fugit, quidem, nesciunt modi consequuntur facere exercitationem repellendus
+            necessitatibus unde impedit debitis! Itaque, architecto fugit.</p>
+    </div>
+
+    <!-- Les images -->
+    <div>
+        <h2>Les images</h2>
+        <!-- Figure est une sorte de div réservé aux images -->
+        <figure><img src="./img/img1.jpg" alt="img1">
+            <!-- figcaption permet de donner une légende une image -->
+            <figcaption>Je suis Said</figcaption>
+            <figure>
+                <figure><img src="https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691__340.png" alt="img1">
+                    <!-- figcaption permet de donner une légende une image -->
+                    <figcaption>Je suis le chat</figcaption>
+                    <figure>
+                        <div>
+                            <div>
+                                <!-- Les video -->
+                                <h2>Les video</h2>
+                                <h3>Video récupérés</h3>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/FiNw8KUCiBk"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <h3>Video du serveur</h3>
+                                <!-- autoplay foncitonne si mute est indiqué -->
+                                <video autoplay muted="false" controls nofullscreen poster buffered playsinline
+                                    disablePictureInPicture loop width="50%" src="./videos/video1.mp4"></video>
+                            </div>
+                            <div>
+                                <h2>exemple mise en forme texte</h2>
+                                <p><strong>Je suis un paragraphe stylé</strong> : Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Perferendis,
+                                    <br><br>
+                                    nulla nisi autem necessitatibus doloribus tenetur laborum ullam vel! Veniam sed
+                                    aliquid,
+                                    magnam amet atque facere esse vitae odit nam consectetur.
+                                </p>
+                                <h3>Italique</h3>
+                                <p>
+                                    <em>Salut toi</em> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                                    delectus iste provident animi laboriosam, omnis ut explicabo dicta dolorem aliquam
+                                    debitis fugit sit accusantium ex sapiente laudantium libero sed praesentium?
+                                </p>
+                                <h3>Surbrillance</h3>
+                                <p>
+                                    Bonjour <mark>
+                                        aurevoir
+                                    </mark>
+                                </p>
+                            </div>
+                            <!-- Les listes -->
+                            <div>
+                                <h2>Les listes</h2>
+                                <h3>Les listes non ordonée (Unordered List)</h3>
+                                <ul>
+                                    <li>Element 1 </li>
+                                    <li>Element 2 </li>
+                                    <li>Element 3 </li>
+                                </ul>
+                                <h3>Les listes ordonée (Ordered List)</h3>
+                                <ol>
+                                    <li>Element 1</li>
+                                    <li>Element 2</li>
+                                    <li>Element 3</li>
+                                </ol>
+                                <h3id="ancre-listes-descriptives>Liste descriptive</h3id>
+                                    </h3>
+                                    <dl>
+                                        <dd>HTML</dd>
+                                        <dd>Language de balisage utilisé pour la création de page web, permettant
+                                            notamment de définir des liens
+                                            hypertexte</dd>
+                                        <dd>CSS</dd>
+                                        <dd>Le CSS ( Casding style sheets) est un Language informatique utilisé sur
+                                            l'internet
+                                            porur mettre en
+                                            forme
+                                            le texte contenu sur les pages HTML. </dd>
+                                    </dl>
+                            </div>
+                        </main>
+</body>
+
+</html>

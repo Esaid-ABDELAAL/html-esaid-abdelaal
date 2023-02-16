@@ -1,0 +1,39 @@
+/* Ordinateur */
+
+@media screen and (min-width : 1025px) {
+
+    div{
+        background-color: blue;
+        width: 600px;
+        height: 600px;
+    }
+    
+}
+
+/* Tablette */
+
+@media screen and (min-width : 481px) and (max-width : 1024px)  {
+
+    div{
+    background-color: red;
+    width: 400px;
+    height: 400px;
+}
+    
+}
+
+
+/* Mobile */
+@media screen and (max-width: 480px){   
+
+    .base{
+        width: 100%;
+        height: 100%;
+
+    }
+
+}
+
+
+
+

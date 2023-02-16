@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <form action="https://www.youtube.com/" method="get">
+            <label for="id_nom">Votre nom</label>
+            <input type="text" name="nom" id="id_nom" placeholder="ABDELAAL" required>
+            <br>
+            <br>
+            <label for="id_prenom">Votre prénom</label>
+            <input type="text" name="prenom" id="id_prenom" placeholder="Esaid" required>
+            <br>
+            <br>
+            <h2>Véhicules</h2>
+            <input type="checkbox" name="Choix_vehicule" id="id_aucun_vehicule"  value="aucun" checked>
+            <label for="id_voiture">Aucun</label>
+            <br>
+            <input type="checkbox" name="Choix_vehicule" id="id_vehicule" required value="voiture">
+            <label for="id_voiture">Voiture</label>
+            <br>
+            <input type="checkbox" name="Choix_vehicule" id="id_vehicule" required value="camion">
+            <label for="id_camion">Camion</label>
+            <br>
+            <input type="checkbox" name="Choix_vehicule" id="id_vehicule" required value="moto">
+            <label for="id_moto">Moto</label>
+            <br>
+            <br>
+            <h2>Humeur du jour</h2>
+            <label for="id_furieux">Furieux</label>
+            <input type="radio" name="humeur" id="id_furieux">
+            <br>
+            <label for="id_joyeux">Joyeux</label>
+            <input type="radio" name="humeur" id="id_joyeux">
+            <br>
+            <label for="id_heureux">Heureux</label>
+            <input type="radio" name="humeur" id="id_heureux">
+
+            
+            <br>
+            <br>
+            <input type="submit" value="Envoyer">
+        </form>
+    </main>
+    <footer>
+        <p>© Said</p>
+    </footer>
+</body>
+
+</html>

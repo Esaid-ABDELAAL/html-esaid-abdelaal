@@ -1,0 +1,103 @@
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div{
+    width:24%;
+    display: flex;
+}
+
+div{
+
+    width:24%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5%;
+ 
+}
+
+.special{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+span{
+    width: 300px;
+    height: 280px;
+    border-radius: 150px;
+    display: flex;
+    background-color: rgba(100%, 100%, 100%, 0.3);       
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: 500%;
+}
+
+
+
+
+div:nth-child(4), div:nth-child(9){
+    background-color: orange;
+}
+
+/* On cible la 6 div  */
+div:nth-of-type(6), div:nth-of-type(1) {
+    background-color: green;
+}
+
+div:nth-of-type(5n+2){
+    background-color: blue;
+}
+
+div:nth-of-type(5n+3){
+    background-color: pink;
+}
+
+div:nth-of-type(5){
+    background-color: red;
+}
+
+ div:nth-of-type(1) {
+    background-color: green;
+}
+
+/* Mobile */
+@media screen and (max-width: 480px){   
+
+    div{
+        width: 100%;
+        height: 10%;
+    }
+    span{
+        width: 100px;
+        height: 100px;
+        border-radius: 150px;
+        display: flex;
+        background-color: rgba(100%, 100%, 100%, 0.3);       
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        font-size: 500%;
+    }
+}
+
+/* Tablette */
+
+@media screen and (min-width : 481px) and (max-width : 1024px)  {
+
+    div{
+        width:calc(50%/0.50);        
+        height:50%;
+    }
+    
+}

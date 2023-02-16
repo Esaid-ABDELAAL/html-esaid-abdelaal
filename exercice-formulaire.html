@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+
+        <h1>Idendité</h1>
+        <form action="https://www.google.fr/" method="get" target="_blank">
+            <!-- La balise fieldset permet d'encadrer notre formulaire -->
+            <fieldset> 
+                <legend>Inscription formation:</legend>
+                <!-- La balise legend permet de mettre un titre a notre encadrement -->
+                <label for="id_nom">Nom</label>
+                <input type="text" name="Nom" id="id_nom" placeholder="ABDELAAL" required>
+                <br>
+                <br>
+                <label for="id_prenom">Prénom</label>
+                <input type="text" name="Nom" id="id_prenom" placeholder="Esaid" required>
+                <br>
+                <br>
+                <label for="id_date_naissance">Date de naissance</label>
+                <input type="date" name="date de naissance" id="id_date_naissance">
+                <br>
+                <br>
+                <label for="id_email">E-Mail</label>
+                <input type="email" name="mail" id="id_email" placeholder="monemail@adresse.com" required>
+                <br>
+                <br>
+                <label for="id_mdp">Mot de passe (6 caractères minimum)</label>
+                <input type="password" name="mdp" id="id_mdp" minlength="6" maxlength="8" required>
+                <br>
+                <br>
+                <label for="id_diplome">Derniere diplome obtenue</label>
+                <!-- La balise select permet de faire une liste déroualante -->
+                <select name="diplome" id="id_diplome" required>
+                    <option selected> -- Selectionner un diplome --
+                    <option>Brevet
+                    <option>BAC
+                    <option>BTS
+                </select>
+                <br>
+                <br>
+                <label for="id_formation">Formation souhaitée</label>
+                <input type="text" name="formation" id="id_formation">
+                <h2>Vos motivation</h2>
+                <p>Expliquez pourquoi vous voulez rejoindre la formation sélectionné</p>
+                <!-- Zone de texte -->
+                <textarea name="zone_texte" rows=10 cols=250"
+                placeholder="Vos motivation"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Envoyer">
+                
+        </form>
+
+    </main>
+    <footer></footer>
+</body>
+
+</html>

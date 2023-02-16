@@ -1,0 +1,31 @@
+nav {
+    display: block;
+}
+
+.blue{
+    background-color: blue;
+    height: 1500px;
+    width: 500px;
+    position: relative;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.purple{
+    height: 400px;
+    width: 400px;
+    background-color: purple;
+    margin: auto;
+    /* position: absolute;  */
+}
+
+.red{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: fixed; 
+}
+
+
+

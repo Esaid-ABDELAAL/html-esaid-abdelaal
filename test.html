@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mise en page HTML</title>
+</head>
+
+<body>
+    <!--Facultatif mais apprécié en sémantique HTML et pour le SEO -->
+    <header></header>
+    <main></main>
+    <!-- Type block : prend tout la largeuur de ligne (<p>, h*>, <div>, <table>, <forme>, etc..) -->
+    <!-- Type inline : ne prend que la largeur nécessaire (<spawn>, <a>, <button>, etc...) -->
+
+    <!--En tête de h1 à h6  -->
+    <!-- Attention : pour respecter les règles SEO on n'utilise qu'un seule fois par page la balise h1 -->
+    <h1>Je suis moi</h1>
+
+    <p>Je suis un paragraphe : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores rerum, repudiandae quos
+        a id, asperiores tempore voluptas, maiores pariatur deserunt mollitia dolore error. Modi beatae, voluptates
+        veritatis pariatur adipisci iusto!</p>
+
+    <!-- Balise div servant par exemple à regrouper d'autre élement d'une meme page  -->
+    <div>
+        <h2>Je suis le h2 de la div</h2>
+        <p>Je suis le paragraphe 1 : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur error veniam
+            facere odit natus, possimus laudantium, rerum neque cumque debitis esse qui consequatur nesciunt eum
+            architecto ut voluptatibus officiis libero.</p>
+        <p>Je suis le paragraphe 2 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quam ipsa
+            blanditiis nostrum possimus nam maiores. Tempore voluptates ut officia animi porro ipsa tenetur perferendis,
+            fugit repudiandae non sunt fuga.</p>
+        <p>Je suis le paragraphe 3 : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempora culpa
+            eius tenetur aliquid suscipit fugit, quidem, nesciunt modi consequuntur facere exercitationem repellendus
+            necessitatibus unde impedit debitis! Itaque, architecto fugit.</p>
+    </div>
+
+    <!-- Les images -->
+    <div>
+        <h2>Les images</h2>
+        <!-- Figure est une sorte de div réservé aux images -->
+        <figure><img src="./img/img1.jpg" alt="img1">
+            <!-- figcaption permet de donner une légende une image -->
+            <figcaption>Je suis Said</figcaption>
+            <figure>
+                <figure><img src="https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691__340.png" alt="img1">
+                    <!-- figcaption permet de donner une légende une image -->
+                    <figcaption>Je suis le chat</figcaption>
+                    <figure>
+                        <div>
+                            <div>
+                                <!-- Les video -->
+                                <h2>Les video</h2>
+                                <h3>Video récupérés</h3>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/FiNw8KUCiBk"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <h3>Video du serveur</h3>
+                                <!-- autoplay foncitonne si mute est indiqué -->
+                                <video autoplay muted="false" controls nofullscreen poster buffered playsinline
+                                    disablePictureInPicture loop width="50%" src="./videos/video1.mp4"></video>
+                            </div>
+                            <div>
+                                <h2>exemple mise en forme texte</h2>
+                                <p><strong>Je suis un paragraphe stylé</strong> : Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Perferendis,
+                                    <br><br>
+                                    nulla nisi autem necessitatibus doloribus tenetur laborum ullam vel! Veniam sed
+                                    aliquid,
+                                    magnam amet atque facere esse vitae odit nam consectetur.
+                                </p>
+                                <h3>Italique</h3>
+                                <p>
+                                    <em>Salut toi</em> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                                    delectus iste provident animi laboriosam, omnis ut explicabo dicta dolorem aliquam
+                                    debitis fugit sit accusantium ex sapiente laudantium libero sed praesentium?
+                                </p>
+                                <h3>Surbrillance</h3>
+                                <p>
+                                    Bonjour <mark>
+                                        aurevoir
+                                    </mark>
+                                </p>
+                            </div>
+                            <!-- Les listes -->
+                            <div>
+                                <h2>Les listes</h2>
+                                <h3>Les listes non ordonée (Unordered List)</h3>
+                                <ul>
+                                    <li>Element 1 </li>
+                                    <li>Element 2 </li>
+                                    <li>Element 3 </li>
+                                </ul>
+                                <h3>Les listes ordonée (Ordered List)</h3>
+                                <ol>
+                                    <li>Element 1</li>
+                                    <li>Element 2</li>
+                                    <li>Element 3</li>
+                                </ol>
+                                <h3id="ancre-listes-descriptives>Liste descriptive</h3id>
+                                    </h3>
+                                    <dl>
+                                        <dd>HTML</dd>
+                                        <dd>Language de balisage utilisé pour la création de page web, permettant
+                                            notamment de définir des liens
+                                            hypertexte</dd>
+                                        <dd>CSS</dd>
+                                        <dd>Le CSS ( Casding style sheets) est un Language informatique utilisé sur
+                                            l'internet
+                                            porur mettre en
+                                            forme
+                                            le texte contenu sur les pages HTML. </dd>
+                                    </dl>
+                            </div>
+                            <div>
+                                <h2>Les liens externes</h2>
+                                <h3>Sans changement de page </h3>
+                                <a href="https://google.fr">Liens externe sans changement de page </a>
+                                <h3>Avec changement de page</h3>
+                                <!-- _blank ça ouvre autant de fois que de click -->
+                                <!-- blank  ouvre une seule fois le meme onglet -->
+                                <a href="https://google.fr" target="_blank">Lien externe avec changement de page</a>
+
+                                <h2>Lien interne (ancre)</h2>
+
+                                <a href="#ancre-paragraphe-03">Lien interne - Ancre</a>
+                                <h2>Les liens vers un page d'un site avec ancre</h2>
+
+                                <a href="">Liens vers page d'un site avec ancre</a>
+                                <h3>Paragaphe 01</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed alias placeat
+                                    tenetur nisi. In nulla, temporibus quam consectetur sapiente asperiores totam
+                                    suscipit commodi illum ullam consequatur voluptas et repellat.
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus iure
+                                    earum aliquid perspiciatis debitis, sunt ea ab a laudantium ut nobis delectus quos
+                                    fugiat deserunt aliquam at dolores est!
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate itaque sed
+                                    debitis dicta aliquam, corrupti similique unde harum iure modi. Nemo officiis
+                                    delectus veniam magnam porro dolorum, nisi itaque neque?
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad est id laudantium
+                                    laborum iste? Repudiandae hic necessitatibus non voluptates explicabo eveniet animi,
+                                    corporis officiis nemo? Fugiat totam rem expedita unde.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque eveniet
+                                    qui sunt ex ratione consequuntur iure non dicta culpa! Repellat cum ipsam sit. Rem
+                                    nam quod reiciendis consectetur aliquam.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque, rerum voluptas
+                                    laborum ad possimus? Ipsum, dolorum. Unde rerum, quod expedita atque cum, illum non
+                                    quos, itaque dolor molestias eligendi.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum sint
+                                    necessitatibus sequi? Illum dicta, omnis voluptate alias magnam distinctio porro
+                                    pariatur, nesciunt perspiciatis commodi veniam aperiam eligendi neque consequatur.
+                                </p>
+                                <h3>Paragaphe 02</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed alias placeat
+                                    tenetur nisi. In nulla, temporibus quam consectetur sapiente asperiores totam
+                                    suscipit commodi illum ullam consequatur voluptas et repellat.
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus iure
+                                    earum aliquid perspiciatis debitis, sunt ea ab a laudantium ut nobis delectus quos
+                                    fugiat deserunt aliquam at dolores est!
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate itaque sed
+                                    debitis dicta aliquam, corrupti similique unde harum iure modi. Nemo officiis
+                                    delectus veniam magnam porro dolorum, nisi itaque neque?
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad est id laudantium
+                                    laborum iste? Repudiandae hic necessitatibus non voluptates explicabo eveniet animi,
+                                    corporis officiis nemo? Fugiat totam rem expedita unde.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed alias placeat
+                                    tenetur nisi. In nulla, temporibus quam consectetur sapiente asperiores totam
+                                    suscipit commodi illum ullam consequatur voluptas et repellat.
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus iure
+                                    earum aliquid perspiciatis debitis, sunt ea ab a laudantium ut nobis delectus quos
+                                    fugiat deserunt aliquam at dolores est!
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate itaque sed
+                                    debitis dicta aliquam, corrupti similique unde harum iure modi. Nemo officiis
+                                    delectus veniam magnam porro dolorum, nisi itaque neque?
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad est id laudantium
+                                    laborum iste? Repudiandae hic necessitatibus non voluptates explicabo eveniet animi,
+                                    corporis officiis nemo? Fugiat totam rem expedita unde.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque eveniet
+                                    qui sunt ex ratione consequuntur iure non dicta culpa! Repellat cum ipsam sit. Rem
+                                    nam quod reiciendis consectetur aliquam.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque, rerum voluptas
+                                    laborum ad possimus? Ipsum, dolorum. Unde rerum, quod expedita atque cum, illum non
+                                    quos, itaque dolor molestias eligendi.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum sint
+                                    necessitatibus sequi? Illum dicta, omnis voluptate alias magnam distinctio porro
+                                    pariatur, nesciunt perspiciatis commodi veniam aperiam eligendi neque consequatur.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque eveniet
+                                    qui sunt ex ratione consequuntur iure non dicta culpa! Repellat cum ipsam sit. Rem
+                                    nam quod reiciendis consectetur aliquam.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque, rerum voluptas
+                                    laborum ad possimus? Ipsum, dolorum. Unde rerum, quod expedita atque cum, illum non
+                                    quos, itaque dolor molestias eligendi.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum sint
+                                    necessitatibus sequi? Illum dicta, omnis voluptate alias magnam distinctio porro
+                                    pariatur, nesciunt perspiciatis commodi veniam aperiam eligendi neque consequatur.
+                                </p>
+                                <h3>Paragaphe 03</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed alias placeat
+                                    tenetur nisi. In nulla, temporibus quam consectetur sapiente asperiores totam
+                                    suscipit commodi illum ullam consequatur voluptas et repellat.
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus iure
+                                    earum aliquid perspiciatis debitis, sunt ea ab a laudantium ut nobis delectus quos
+                                    fugiat deserunt aliquam at dolores est!
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate itaque sed
+                                    debitis dicta aliquam, corrupti similique unde harum iure modi. Nemo officiis
+                                    delectus veniam magnam porro dolorum, nisi itaque neque?
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad est id laudantium
+                                    laborum iste? Repudiandae hic necessitatibus non voluptates explicabo eveniet animi,
+                                    corporis officiis nemo? Fugiat totam rem expedita unde.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque eveniet
+                                    qui sunt ex ratione consequuntur iure non dicta culpa! Repellat cum ipsam sit. Rem
+                                    nam quod reiciendis consectetur aliquam.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed alias placeat
+                                    tenetur nisi. In nulla, temporibus quam consectetur sapiente asperiores totam
+                                    suscipit commodi illum ullam consequatur voluptas et repellat.
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus iure
+                                    earum aliquid perspiciatis debitis, sunt ea ab a laudantium ut nobis delectus quos
+                                    fugiat deserunt aliquam at dolores est!
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate itaque sed
+                                    debitis dicta aliquam, corrupti similique unde harum iure modi. Nemo officiis
+                                    delectus veniam magnam porro dolorum, nisi itaque neque?
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad est id laudantium
+                                    laborum iste? Repudiandae hic necessitatibus non voluptates explicabo eveniet animi,
+                                    corporis officiis nemo? Fugiat totam rem expedita unde.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque eveniet
+                                    qui sunt ex ratione consequuntur iure non dicta culpa! Repellat cum ipsam sit. Rem
+                                    nam quod reiciendis consectetur aliquam.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque, rerum voluptas
+                                    laborum ad possimus? Ipsum, dolorum. Unde rerum, quod expedita atque cum, illum non
+                                    quos, itaque dolor molestias eligendi.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum sint
+                                    necessitatibus sequi? Illum dicta, omnis voluptate alias magnam distinctio porro
+                                    pariatur, nesciunt perspiciatis commodi veniam aperiam eligendi neque
+                                    consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque,
+                                    rerum voluptas laborum ad possimus? Ipsum, dolorum. Unde rerum, quod expedita atque
+                                    cum, illum non quos, itaque dolor molestias eligendi.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum sint
+                                    necessitatibus sequi? Illum dicta, omnis voluptate alias magnam distinctio porro
+                                    pariatur, nesciunt perspiciatis commodi veniam aperiam eligendi neque consequatur.
+                                </p>
+                                <h3 id="ancre-paragraphe-03"> Paragaphe 04</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed alias placeat
+                                    tenetur nisi. In nulla, temporibus quam consectetur sapiente asperiores totam
+                                    suscipit commodi illum ullam consequatur voluptas et repellat.
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus iure
+                                    earum aliquid perspiciatis debitis, sunt ea ab a laudantium ut nobis delectus quos
+                                    fugiat deserunt aliquam at dolores est!
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate itaque sed
+                                    debitis dicta aliquam, corrupti similique unde harum iure modi. Nemo officiis
+                                    delectus veniam magnam porro dolorum, nisi itaque neque?
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad est id laudantium
+                                    laborum iste? Repudiandae hic necessitatibus non voluptates explicabo eveniet animi,
+                                    corporis officiis nemo? Fugiat totam rem expedita unde.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque eveniet
+                                    qui sunt ex ratione consequuntur iure non dicta culpa! Repellat cum ipsam sit. Rem
+                                    nam quod reiciendis consectetur aliquam.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque, rerum voluptas
+                                    laborum ad possimus? Ipsum, dolorum. Unde rerum, quod expedita atque cum, illum non
+                                    quos, itaque dolor molestias eligendi.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sed alias placeat
+                                    tenetur nisi. In nulla, temporibus quam consectetur sapiente asperiores totam
+                                    suscipit commodi illum ullam consequatur voluptas et repellat.
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus iure
+                                    earum aliquid perspiciatis debitis, sunt ea ab a laudantium ut nobis delectus quos
+                                    fugiat deserunt aliquam at dolores est!
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate itaque sed
+                                    debitis dicta aliquam, corrupti similique unde harum iure modi. Nemo officiis
+                                    delectus veniam magnam porro dolorum, nisi itaque neque?
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad est id laudantium
+                                    laborum iste? Repudiandae hic necessitatibus non voluptates explicabo eveniet animi,
+                                    corporis officiis nemo? Fugiat totam rem expedita unde.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque eveniet
+                                    qui sunt ex ratione consequuntur iure non dicta culpa! Repellat cum ipsam sit. Rem
+                                    nam quod reiciendis consectetur aliquam.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque, rerum voluptas
+                                    laborum ad possimus? Ipsum, dolorum. Unde rerum, quod expedita atque cum, illum non
+                                    quos, itaque dolor molestias eligendi.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum sint
+                                    necessitatibus sequi? Illum dicta, omnis voluptate alias magnam distinctio porro
+                                    pariatur, nesciunt perspiciatis commodi veniam aperiam eligendi neque consequatur.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rerum sint
+                                    necessitatibus sequi? Illum dicta, omnis voluptate alias magnam distinctio porro
+                                    pariatur, nesciunt perspiciatis commodi veniam aperiam eligendi neque consequatur.
+                                </p>
+
+                                <a href="#">retour haut page</a>
+
+
+                            </div>
+
+                            <div>
+                                <h3>Avis sur ...</h3>
+                                <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum ipsam non hic neque, debitis iusto qui numquam eveniet minus! Odio debitis sapiente laboriosam non libero illo recusandae accusamus minus.
+                                </p>
+                                <a href="https://fr.wikipedia.org/wiki/Victor_Vito"></a>
+                                <a href="https://fr.wikipedia.org/wiki/Victor_Vito#Style_de_jeu" target="_blank">Wikipidea</a>
+
+
+
+                            </div>
+                            <footer>
+                                <p>© Said</p>
+                            </footer>
+</body>
+
+</html>

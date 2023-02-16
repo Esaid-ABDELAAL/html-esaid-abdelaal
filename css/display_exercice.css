@@ -1,0 +1,59 @@
+main{
+    width: 100%;
+}
+
+div{
+
+    display: inline-block;
+}
+
+.special{
+    
+    width: 25%;
+    height: 20vh;
+
+
+
+    
+}
+
+/* span{  
+    width: 60%;
+    height: 30vh;
+    border-radius: 50%;
+    display: flex;
+    background-color: rgba(100%, 100%, 100%, 0.3);    
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    font-size: 200%;
+}*/
+
+div:nth-child(4){
+    background-color: orange;
+}
+
+/* On cible la 6 div  */
+div:nth-of-type(6), div:nth-of-type(1) {
+    background-color: green;
+}
+
+div:nth-of-type(5n+2){
+    background-color: blue;
+}
+
+div:nth-of-type(5n+3){
+    background-color: pink;
+}
+
+div:nth-of-type(5){
+    background-color: red;
+}
+
+div:nth-of-type(9){
+    background-color: orange;
+}
+
+

@@ -1,0 +1,141 @@
+.prenom:hover{
+  background-color: blue;
+}
+
+table {
+  margin-left: 10px;
+  border-collapse: collapse;
+}
+
+td {
+  height: 50px;
+  width: 50px;
+  border-width: 2px;
+  border-color: green;
+  border-style: solid;
+  padding: 25px;
+}
+
+table:hover .rouge {
+  background-color: red;
+  transition-duration: 1.5s;
+  /* délai avant l'animation */
+  transition-delay: 1ms;
+
+
+}
+
+
+table:hover .green {
+  background-color: green;
+  transition-duration: 1.5s;
+  /* délai avant l'animation */
+  transition-delay: 2s;
+
+}
+
+
+
+table:hover .purple {
+  background-color: purple;
+  transition-duration: 1.5s;
+  /* délai avant l'animation */
+  transition-delay: 3s;
+
+
+}
+
+
+.red_animation {
+  background-color: red;
+  height: 50px;
+  width: 800px;
+
+
+}
+
+.red_animation:hover .blue_animation { 
+  animation-name: mouvement_bleu;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+
+}
+
+.blue_animation {
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+
+@keyframes mouvement_bleu {
+  0% {
+    left: 0px;
+  }
+
+  50% {
+    left: 750px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.carre_rouge:hover .carre_yellow {
+  animation-name: mouvement_jaune;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+
+}
+
+
+
+.carre_rouge {
+  background-color: red;
+  height: 550px;
+  width: 550px;
+
+}
+
+.carre_yellow {
+  background-color: yellow;
+  height: 100px;
+  width: 100PX;
+  position: absolute;
+  
+}
+
+@keyframes mouvement_jaune {
+  0%{
+
+  transform: translate(0px, 0px);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 48% 0);
+  background-color: yellow;
+
+  }
+  25% {
+    transform: translate(0px, 450px);
+    clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+    background-color: blue;
+  }
+  50% {
+    transform: translate(450px, 450px);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    background-color: green;
+  }
+
+  75% {
+    transform: translate(450px, 0px);
+    clip-path: polygon(100% 54%, 100% 100%, 0 100%, 0 61%, 48% 0);
+    background-color: black;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 48% 0);
+    background-color: yellow;
+   
+  }
+}

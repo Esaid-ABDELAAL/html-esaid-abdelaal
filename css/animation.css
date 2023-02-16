@@ -1,0 +1,47 @@
+/* ANIMATION AVEC TRANSFORM */
+.blue{
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+    /* temps de l'animation */
+    transition-duration: 1.5s; 
+    /* délai avant l'animation */
+    transition-delay: 1ms;
+
+    transition-property: all;
+    transition-timing-function: ease-in;
+}
+
+.blue:hover{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transform: translate(200px,10px) rotate(180deg);
+}
+
+
+/* ANIMATION AVEC ANIMATION */
+
+.green{
+    background-color:green;
+    height: 300px;
+    width: 300px;
+    /* Appeler l'animation*/
+    animation-name: animationRigolote; 
+    /* durée de l'animation*/
+    animation-duration: 1s;    
+    /*nombre de fois que l'animation est joué*/
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+@keyframes animationRigolote{
+    from {
+        transform: translate (0px,0px) rotate (0deg);
+    }
+    to {
+    
+    transform: translate(200px,10px) rotate(180deg);
+
+
+    }
+}

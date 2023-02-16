@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mise en page CSS</title>
+
+    <style>
+        /* Le css serrent a viser des balise ou des classe ou des id */
+        /* Propriété */
+        body {
+
+
+            background-color: violet;
+            /* la valeur  */
+            color: white;
+
+        }
+
+        /* Déclare un class avec un point */
+        .exemple-01 {
+            color: black;
+        }
+
+        /* On declare un id avec un hastag */
+        #exemple-id-01 {
+            color: red;
+        }
+
+        .exemple-class-02 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #exemple-id-02 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header></header>
+    <main>
+        <div>
+            <p class="exemple-01">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus saepe vitae,
+                accusantium dicta tenetur dolorum rem iste deserunt assumenda. Accusantium, animi deleniti porro totam
+                saepe
+                numquam suscipit placeat sed harum?</p>
+            <!-- Un meme id est itlisser UNIQUEMENT une seule fois sur un meme page  -->
+            <p id="exemple-id-01">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aperiam commodi possimus suscipit sequi soluta odit dolore, laboriosam dolores blanditiis, itaque quidem
+                ipsam non. Quisquam nam reprehenderit cumque atque incidunt facilis?</p>
+            <!-- L'id est prioritaine par rapport a la class -->
+            <p class="exemple-01" id="exemple-id-01">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Atque nulla a officia voluptas natus repellat. Maxime quae perspiciatis et nulla, adipisci ex unde
+                magnam
+                fuga voluptas laborum soluta, alias dicta.</p>
+
+            <p class="exemple-class-02 exemple-01">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Porro illum consectetur culpa placeat labore? Rem, rerum! Esse ad quod asperiores doloremque repellendus
+                et
+                ab ut nulla laboriosam. Eius, voluptatum tempora?</p>
+            <p id="exemple-id-02">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus repudiandae sequi deleniti repellat
+                dignissimos consequatur quos, laudantium dolore magnam dicta, accusantium, facere aut animi voluptas?
+                Est excepturi iste quos consequuntur!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid officiis quae hic! Ullam quidem
+                consectetur numquam voluptas ad praesentium nihil, asperiores perspiciatis, itaque, tempore dolore
+                accusantium vitae obcaecati in officiis.
+            </p>
+        </div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
